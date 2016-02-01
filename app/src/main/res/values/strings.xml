@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContentProviderMusica</string>
+    <string name="action_settings">Settings</string>
+    <string name="nada"></string>
+</resources>

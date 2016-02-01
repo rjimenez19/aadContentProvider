@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rafa.contentprovidermusica">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".Proveedores.CancionProvider"
+            android:authorities="com.example.rafa.contentprovidermusica.Proveedores.CancionProvider"
+            android:exported= "false" />
+
+        <provider
+            android:name=".Proveedores.InterpreteProvider"
+            android:authorities="com.example.rafa.contentprovidermusica.Proveedores.InterpreteProvider"
+            android:exported= "false" />
+
+        <provider
+            android:name=".Proveedores.DiscoProvider"
+            android:authorities="com.example.rafa.contentprovidermusica.Proveedores.DiscoProvider"
+            android:exported= "false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"></activity>
+    </application>
+
+</manifest>
